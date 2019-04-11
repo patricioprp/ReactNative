@@ -7,7 +7,7 @@ import AlbumList from "./src/components/AlbumList";
 //Crear el Componente
 
 const App = () => (
-  <View>
+  <View style={{flex:1}}>
     <Header headerText={"Albums!"} />
     <AlbumList />
   </View>
@@ -15,3 +15,5 @@ const App = () => (
 //Renderizar en el Dispositivo
 
 AppRegistry.registerComponent("albums", () => App);
+//siempre que tenga un desplazamiento de vista, debe agrear una propiedad de estilo "flex=1" a su elemento raiz para q el componente se expanda toda el area del dispositivo
+
